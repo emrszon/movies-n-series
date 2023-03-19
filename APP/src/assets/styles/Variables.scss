@@ -1,0 +1,36 @@
+// fonts
+$font: Verdana, sans-serif;
+$font-size-1: 1rem;
+$font-size-2: 1.25rem;
+$font-size-3: 1.5rem;
+$font-size-4: 1.75rem;
+$font-size-5: 2rem;
+$font-weight-thin: 300;
+$font-weight-bold: 600;
+$font-weight-heavy: 800;
+
+// colors
+$primary: #1C3879;
+$primaryAlt: #607EAA;
+$secondary: #EAE3D2;
+$secondaryAlt: #F9F5EB;
+$error:#EB4747;
+$success: #54E346;
+
+//base of BS breakpoints
+$screen-xs:					0;
+$xs:						$screen-xs;
+$screen-sm:					576px;
+$sm:						$screen-sm;
+$screen-md:					768px;
+$md:						$screen-md;
+$screen-lg:					992px;
+$lg:						$screen-lg;
+$screen-xl:					1200px;
+$xl:						$screen-xl;
+
+$spacer-1: 0.25rem;
+$spacer-2: 0.5rem;
+$spacer-3: 1rem;
+$spacer-4: 1.5rem;
+$spacer-5: 2rem;

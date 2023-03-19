@@ -1,0 +1,25 @@
+{
+  "name": "movies-n-series",
+  "version": "1.0.0",
+  "description": "Prueba tecnica Backend",
+  "main": "index.js",
+  "scripts": {
+    "pre-start": "concurrently \"cd API && npm install\" \"cd APP && npm install\"",
+    "start": "concurrently \"cd API && npm run start\" \"cd APP && npm run start\"",
+    "start-dev": "concurrently \"cd API && npm run start-dev\" \"cd APP && npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrszon/movies-n-series.git"
+  },
+  "author": "Emerson Herrera Diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emrszon/movies-n-series/issues"
+  },
+  "homepage": "https://github.com/emrszon/movies-n-series#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}

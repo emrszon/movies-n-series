@@ -1,0 +1,26 @@
+@import "../../assets/styles/Variables.scss";
+.alert-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.alert-error{
+  padding: $spacer-3 $spacer-3;
+  color: $error;
+  border: 1px solid $error;
+  border-radius: 8px;
+  
+  
+}
+
+.alert-success{
+  padding: $spacer-3 $spacer-3;
+  color: $primary;
+  background-color: $success;
+  //border: 1px solid $success;
+  border-radius: 8px;
+  li{
+    list-style-type: none;
+  }
+}
+

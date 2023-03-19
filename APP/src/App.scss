@@ -1,0 +1,34 @@
+@import "./assets/styles/General.scss";
+
+.main{
+  background-color: $secondaryAlt;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  color: $primary;
+  overflow: scroll;
+
+  .body-container{
+    padding: $spacer-1 $spacer-3;
+  }
+  .page-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+      font-size: $font-size-3;
+      font-weight: $font-weight-heavy;
+    }
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .main{
+    .body-container{
+      width: 80%;
+      margin: auto;
+      padding: $spacer-3 0;
+    }
+  }
+}

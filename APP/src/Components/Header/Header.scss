@@ -1,0 +1,144 @@
+@import "../../assets/styles/Variables.scss";
+
+.navbar {
+  .container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $primary;
+    overflow: hidden;
+
+    .nav-link {
+      text-decoration: none;
+      color: $secondary;
+      padding: $spacer-3;
+      height: 100%;
+      margin: auto;
+      width: 100%;
+      transition: background ease-in-out 1s;
+      &:hover {
+        background-color: $secondary;
+        color: $primary;
+        transition: background ease-in 0.2s;
+      }
+    }
+    .active {
+      background-color: $primaryAlt;
+    }
+
+    .header-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .header-actions {
+      display: flex;
+    }
+    .icon {
+      //position: absolute;
+      height: 46px;
+      width: 46px;
+      background-color: $primary;
+      color: $secondaryAlt;
+      border: none;
+      cursor: pointer;
+      img {
+        filter: invert(1);
+      }
+    }
+    .sign-out {
+      background-color: $primary;
+      color: $secondaryAlt;
+      border: none;
+      cursor: pointer;
+      height: 48px;
+      width: 100%;
+      font-family: Verdana;
+      font-size: 16px;
+      text-align: left;
+      padding: $spacer-3;
+      transition: background ease-in-out 0.2s;
+      &:hover {
+        background-color: $secondary;
+        color: $primary;
+        transition: background ease-in 0.2s;
+      }
+    }
+    &.show {
+      a:not(:first-child) {
+        display: block;
+      }
+      .sign-out {
+        display: flex;
+        align-items: self-end;
+      }
+    }
+    &.hidden {
+      a:not(:first-child) {
+        display: none;
+      }
+      .sign-out {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .navbar {
+    background-color: $primary;
+    .container {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-between;
+
+      overflow: hidden;
+      margin: auto;
+      width: 80%;
+      .nav-link {
+        text-decoration: none;
+        color: $secondary;
+        padding: $spacer-3;
+        height: 100%;
+        margin: auto;
+        width: 100%;
+        &:hover {
+          background-color: $secondary;
+          color: $primary;
+        }
+      }
+      .active {
+        background-color: $secondaryAlt;
+        color: $primary;
+      }
+      a:not(:first-child) {
+        display: block;
+      }
+      .sign-out {
+        display: block;
+      }
+      .header-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 16px;
+      }
+
+      .header-actions {
+        display: flex;
+      }
+      .icon {
+        display: none;
+      }
+      &.hidden {
+        a:not(:first-child) {
+          display: block;
+        }
+        .sign-out {
+          display: block;
+        }
+      }
+    }
+  }
+}
