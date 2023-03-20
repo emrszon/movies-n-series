@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/movies-n-series/static/css/main.79d0b019.css",
+    "main.js": "/movies-n-series/static/js/main.178f059e.js",
+    "index.html": "/movies-n-series/index.html",
+    "main.79d0b019.css.map": "/movies-n-series/static/css/main.79d0b019.css.map",
+    "main.178f059e.js.map": "/movies-n-series/static/js/main.178f059e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79d0b019.css",
+    "static/js/main.178f059e.js"
+  ]
+}
