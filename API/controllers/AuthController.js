@@ -57,7 +57,7 @@ controller.UserLogin = async (req, res) => {
       error: "Email/password erroneo!",
     });
 
-  const token = jwt.sign({ _id: registeredUser._id }, process.env.JWT_SECRET);
+  const token = jwt.sign({ _id: registeredUser._id, email: registeredUser.email,}, process.env.JWT_SECRET);
   res.header("auth-token", token).json({token});
 };
 

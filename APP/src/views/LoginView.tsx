@@ -8,7 +8,7 @@ const LoginPage = ({ }) => {
   const navigate = useNavigate()
   const location = useLocation();
   //@ts-ignore
-  let from = location.state?.from?.pathname || "/private";
+  let from = location.state?.from?.pathname || "/peliculas";
   useEffect(() => {
     if (userData.token) {
       navigate(from, { replace: true })

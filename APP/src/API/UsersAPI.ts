@@ -19,22 +19,6 @@ export const login:any = (data:any) => {
   });
 }
 
-export const getUsers:any = (page:any) => {
-  return new Promise((resolve, reject) => {
-    axios
-      .get(
-        `${VARIABLES.apiBaseUrl}/users/?page=${page}`,
-      )
-      .then((res) => {
-        const data = res.data;
-        resolve(data);
-      })
-      .catch((err) => {
-        console.log(err);
-        reject(err)});
-  });
-}
-
 export const createUser:any = (data:any) => {
   return new Promise((resolve, reject) => {
     axios

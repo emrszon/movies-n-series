@@ -2,21 +2,28 @@ import { ReactElement } from "react";
 import CreateUserPage from "../views/CreateUserView";
 import NotFoundPage from "../views/Error404View";
 import LoginPage from "../views/LoginView";
-import InsidePrivatePage from "../views/InsideView";
+import MoviesPage from "../views/MoviesView";
+import SeriesPage from "../views/SeriesView";
 
 export interface Route{ path: string; label: string; element: ({}:{})=>JSX.Element; isPrivate: boolean;};
 
-export const routes:{PRIVATE:Route, LOGIN:Route, CREATE_USERS:Route, NOT_FOUND:Route,} = {
+export const routes:{PELICULAS:Route, LOGIN:Route, CREATE_USERS:Route, NOT_FOUND:Route, SERIES:Route,} = {
   LOGIN:{
     path: "/ingreso",
     label:"Ingreso",
     element: LoginPage,
     isPrivate: false,
   },
-  PRIVATE:{
-    path: "/private",
-    label:"Private",
-    element: InsidePrivatePage,
+  PELICULAS:{
+    path: "/peliculas",
+    label:"Películas",
+    element: MoviesPage,
+    isPrivate: true,
+  },
+  SERIES:{
+    path: "/series",
+    label:"Series",
+    element: SeriesPage,
     isPrivate: true,
   },
   CREATE_USERS:{

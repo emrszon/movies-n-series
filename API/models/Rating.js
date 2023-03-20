@@ -5,10 +5,12 @@ const RatingSchema = new mongoose.Schema({
     userId: {
         type: String,
         required: true,
+        ref: 'user'
     },
     contentId: {
         type: String,
         required: true,
+        ref: 'content'
     },
     rate: {
         type: Number,

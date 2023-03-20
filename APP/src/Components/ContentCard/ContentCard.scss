@@ -1,0 +1,59 @@
+@import "../../assets/styles/Variables.scss";
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5%;
+  background-color: steelblue;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 5px 16px 10px 16px;
+}
+
+.movie{
+ background-color: blanchedalmond;
+}
+.serie{
+  background-color: gainsboro;
+}
+.card-container{
+  width: 24%;
+  margin: 5px 5px;
+}
+
+
+.type{
+  font-style: italic;
+  font-weight: bold;
+  font-size: x-small;
+  padding-bottom: 5px;
+}
+.title{
+  font-weight: bolder;
+  font-size:large;
+  padding-bottom: 5px;
+}
+.gender{
+  font-style: italic;
+  font-size:small;
+  padding-bottom: 5px;
+}
+
+.rating,.views{
+  font-weight: lighter;
+  font-size: smaller;
+  padding-bottom: 5px;
+}
+.day-pick{
+  width: 40%;
+}
+
+.actions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

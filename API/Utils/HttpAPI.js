@@ -14,6 +14,6 @@ module.exports.serverErrorResponse = (response, data) => {
 	return response.status(500).json({...data})
 }
 
-module.exports.errorResponse = (response, data) => {
-	return response.status(400).json({...data})
+module.exports.errorResponse = (response,status, data) => {
+	return response.status(status).json({...data})
 }

@@ -20,10 +20,17 @@ const ContentSchema = new mongoose.Schema({
         required: true,
         enum: ["Serie", "Película"],
     },
-    numberOfViews: {
-        type: String,
-        required: true,
-    }
+    // numberOfViews: {
+    //     type: Number,
+    // },
+    views: {
+        type: [mongoose.Types.ObjectId],
+    },
+    dayPick: {
+        type: Boolean,
+        default: false
+    },
+        
 })
 
 module.exports = mongoose.model('Content', ContentSchema);

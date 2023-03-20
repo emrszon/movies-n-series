@@ -8,7 +8,13 @@ const parseType = (string) => {
   if  (["serie", "series"].includes(string.toLowerCase())) return TYPES.serie;
 } 
 
+const SORT_FIELDS = ["name", "type", "gender", "rating"]
+
+const FILTER_FIELDS = ["name", "type", "gender"]
+
 module.exports = {
   TYPES,
-  parseType
+  parseType,
+  SORT_FIELDS,
+  FILTER_FIELDS
 }

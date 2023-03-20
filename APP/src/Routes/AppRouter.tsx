@@ -22,9 +22,15 @@ const AppRouter = () => {
         element={<routes.CREATE_USERS.element />}
       />
       <Route
-        path={routes.PRIVATE.path}
+        path={routes.PELICULAS.path}
         element={<RequiresAuth>
-          {routes.PRIVATE.element}
+          {routes.PELICULAS.element}
+        </RequiresAuth>}
+      />
+      <Route
+        path={routes.SERIES.path}
+        element={<RequiresAuth>
+          {routes.SERIES.element}
         </RequiresAuth>}
       />
       <Route
