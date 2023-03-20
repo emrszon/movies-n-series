@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/movies-n-series/static/css/main.79d0b019.css",
-    "main.js": "/movies-n-series/static/js/main.2b07fb6a.js",
+    "main.js": "/movies-n-series/static/js/main.e3d5305d.js",
     "index.html": "/movies-n-series/index.html",
     "main.79d0b019.css.map": "/movies-n-series/static/css/main.79d0b019.css.map",
-    "main.2b07fb6a.js.map": "/movies-n-series/static/js/main.2b07fb6a.js.map"
+    "main.e3d5305d.js.map": "/movies-n-series/static/js/main.e3d5305d.js.map"
   },
   "entrypoints": [
     "static/css/main.79d0b019.css",
-    "static/js/main.2b07fb6a.js"
+    "static/js/main.e3d5305d.js"
   ]
 }
